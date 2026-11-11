@@ -40,3 +40,22 @@
 .published-books-heading span{font:400 12px/1.5 var(--sans);color:var(--muted)}
 .published-books-heading+.section{padding-top:18px}
 @media(max-width:680px){.books-preview-body{grid-template-columns:1fr;gap:37px}.books-preview-info{justify-self:start}.books-preview h2{font-size:clamp(62px,13.2vw,94px)}.published-books-heading{align-items:start;flex-direction:column;gap:9px}}
+
+/* Strona „Wiersze” — czytelnicza prezentacja starszych opublikowanych tekstów */
+.poetry-hero{padding-bottom:clamp(70px,8vw,115px)}
+.poetry-section{padding-top:clamp(65px,8vw,120px);padding-bottom:clamp(80px,10vw,140px)}
+.poetry-heading{display:grid;grid-template-columns:minmax(0,1fr) minmax(200px,.55fr);gap:40px;align-items:end;margin-bottom:45px}
+.poetry-heading h2,.poetry-more h2{font:400 clamp(38px,5.3vw,74px)/1.06 var(--serif);letter-spacing:-.06em;margin:17px 0 0}
+.poetry-heading>p{font:400 15px/1.8 var(--sans);max-width:330px;margin:0;color:var(--muted)}
+.poem-list{padding:0;margin:0 0 32px;list-style:none;border-top:1px solid var(--ink)}
+.poem-entry{display:grid;grid-template-columns:65px minmax(0,1fr);gap:20px;align-items:baseline;border-bottom:1px solid var(--line);padding:clamp(21px,3vw,34px) 0}
+.poem-index{font:500 11px/1.5 var(--sans);letter-spacing:.12em;color:var(--muted)}
+.poem-name{font:400 clamp(28px,4vw,49px)/1.15 var(--serif);letter-spacing:-.04em}
+.poetry-primary-link{display:inline-flex;align-items:center;gap:22px;padding:18px 24px;border:1px solid var(--ink);font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;line-height:1.5}
+.poetry-primary-link:hover{background:var(--ink);color:var(--paper);text-decoration:none}
+.poetry-source{max-width:650px;margin:25px 0 0;color:var(--muted);font-size:12px;line-height:1.7}
+.poetry-more{background:var(--cream)}
+.poetry-more-inner{padding-top:clamp(65px,8vw,100px);padding-bottom:clamp(70px,8vw,110px);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:50px;align-items:end}
+.poetry-more-inner p{font-size:14px;line-height:1.8;color:var(--muted);max-width:510px}
+.poetry-archive-link{font-size:11px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;border-bottom:1px solid var(--ink);padding-bottom:12px;display:inline-flex;gap:20px;line-height:1.6}
+@media(max-width:760px){.poetry-heading,.poetry-more-inner{grid-template-columns:1fr;gap:24px}.poem-entry{grid-template-columns:40px minmax(0,1fr);gap:12px}.poetry-more-inner{align-items:start}}
