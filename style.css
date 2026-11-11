@@ -5,3 +5,8 @@
 .book-cover-wrap img{display:block;width:100%;height:auto;background:#ded5c8;box-shadow:10px 12px 0 rgba(32,37,31,.08)}
 .book-cover-year{display:block;font-size:12px;color:var(--muted);margin-top:21px}
 @media(max-width:520px){.book-detail--with-cover{grid-template-columns:1fr}.book-cover-wrap{max-width:185px}}
+
+/* Spójne wyświetlanie okładek i odsyłaczy do źródeł */
+.book-cover-link{display:block;max-width:205px}.book-cover-link:hover{text-decoration:none}.book-cover-wrap img{max-height:295px;object-fit:contain;object-position:left top}
+.book-cover-fallback{display:none;flex-direction:column;justify-content:center;min-height:230px;padding:17px 15px;border:1px solid #bfc1b8;background:#e6e1d7;color:#333a32;font:400 19px/1.4 Georgia,serif;text-align:center;box-shadow:9px 11px 0 rgba(32,37,31,.07)}
+.book-cover-wrap.cover-unavailable .book-cover-link{display:none}.book-cover-wrap.cover-unavailable .book-cover-fallback,.book-cover-wrap--link-only .book-cover-fallback{display:flex}.book-cover-wrap--link-only .book-cover-fallback{min-height:253px;align-items:center;justify-content:space-between;font-size:23px;letter-spacing:-.035em;padding:31px 15px}.book-cover-wrap--link-only .book-cover-fallback small{font:500 11px/1.6 Arial,sans-serif;letter-spacing:.02em;text-transform:uppercase}
