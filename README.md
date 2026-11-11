@@ -1,2 +1,2 @@
 # pawelsarna.github.io
-Strona poetycka Pawła Sarny.
+Strona poetycka Pawła Sarny
