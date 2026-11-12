@@ -59,3 +59,28 @@
 .poetry-more-inner p{font-size:14px;line-height:1.8;color:var(--muted);max-width:510px}
 .poetry-archive-link{font-size:11px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;border-bottom:1px solid var(--ink);padding-bottom:12px;display:inline-flex;gap:20px;line-height:1.6}
 @media(max-width:760px){.poetry-heading,.poetry-more-inner{grid-template-columns:1fr;gap:24px}.poem-entry{grid-template-columns:40px minmax(0,1fr);gap:12px}.poetry-more-inner{align-items:start}}
+
+/* Czytelnia poezji: pełne utwory i nawigacja po pięciu tomach */
+.poetry-volume-nav{display:flex;flex-wrap:wrap;gap:10px;padding-top:27px;padding-bottom:29px;border-bottom:1px solid var(--line)}
+.poetry-volume-nav a{display:inline-flex;align-items:center;gap:11px;border:1px solid #aeb4a9;padding:13px 16px;font:600 12px/1.4 var(--sans);transition:background .15s,color .15s}
+.poetry-volume-nav a span{font-size:11px;color:var(--muted);font-weight:400}
+.poetry-volume-nav a:hover{background:var(--ink);color:var(--paper);text-decoration:none}
+.poetry-volume-nav a:hover span{color:#d1d8ca}
+.poetry-book-section{scroll-margin-top:95px}
+.poetry-book-section:nth-of-type(odd){background:#ebe8e0}
+.poetry-book-header{padding-top:clamp(70px,9vw,120px);padding-bottom:32px;border-bottom:1px solid var(--line)}
+.poetry-book-kicker{display:flex;gap:22px;font:700 11px/1.4 var(--sans);letter-spacing:.17em;text-transform:uppercase;color:var(--accent)}
+.poetry-book-header h2{font:400 clamp(45px,7vw,95px)/1 var(--serif);letter-spacing:-.065em;margin:26px 0 15px}
+.poetry-book-header>p{font-size:12px;color:var(--muted);margin:0}
+.poetry-poems{padding-top:0;padding-bottom:clamp(50px,8vw,130px)}
+.poetry-piece{padding:clamp(47px,6vw,85px) 0;max-width:1050px;margin:0 auto;border-bottom:1px solid var(--line);scroll-margin-top:110px}
+.poetry-piece:last-child{border-bottom:0}
+.poetry-piece-heading{margin-bottom:36px}
+.poetry-piece-number{display:block;font:700 10px/1.5 var(--sans);letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin-bottom:15px}
+.poetry-piece h3{font:400 clamp(33px,4.2vw,60px)/1.08 var(--serif);letter-spacing:-.045em;margin:0;max-width:850px}
+.poetry-dedication{font:italic 15px/1.5 var(--serif);margin:14px 0 0;color:var(--muted)}
+.poetry-body{white-space:pre-wrap;overflow-wrap:normal;word-break:normal;font:400 clamp(16px,1.42vw,19px)/1.75 var(--serif);letter-spacing:0;max-width:980px}
+.poetry-body em{font-style:italic}
+.poetry-end{padding-top:60px;padding-bottom:90px}
+.poetry-end a{display:inline-block;border-bottom:1px solid var(--ink);padding-bottom:10px;font:700 11px/1.4 var(--sans);letter-spacing:.13em;text-transform:uppercase}
+@media(max-width:680px){.poetry-volume-nav{gap:8px}.poetry-volume-nav a{padding:11px 12px;font-size:11px}.poetry-piece-heading{margin-bottom:28px}.poetry-body{font-size:16px;line-height:1.68;overflow-wrap:break-word}}
