@@ -114,3 +114,23 @@
 .contact-confirmation{min-height:35vh;padding-top:90px;padding-bottom:140px}
 .contact-confirmation h2{font:400 clamp(35px,5vw,62px)/1.15 var(--serif);letter-spacing:-.04em}
 @media(max-width:800px){.contact-layout{grid-template-columns:1fr;gap:35px}.contact-section{padding-top:60px}.contact-form{max-width:none}}
+
+
+/* Portret autorski wyłącznie na stronie głównej. */
+.hero-main{display:grid;grid-template-columns:minmax(0,1fr) clamp(165px,22vw,265px);column-gap:clamp(18px,3.5vw,55px);align-items:center}
+.hero-main .hero-name{font-size:clamp(78px,11.5vw,170px);white-space:normal;margin-bottom:0}
+.hero-portrait{width:100%;margin:0;justify-self:end;overflow:hidden}
+.hero-portrait img{display:block;width:100%;height:auto;aspect-ratio:320/362;object-fit:cover}
+@media(max-width:850px){
+ .hero-main{grid-template-columns:minmax(0,1fr) clamp(130px,25vw,220px);gap:16px}
+ .hero-main .hero-name{font-size:clamp(64px,12.6vw,105px)}
+}
+@media(max-width:520px){
+ .hero-main{grid-template-columns:minmax(0,1fr) clamp(105px,29vw,150px);gap:12px}
+ .hero-main .hero-name{font-size:clamp(64px,15.8vw,85px)}
+}
+@media(max-width:420px){
+ .hero-main{grid-template-columns:1fr;gap:15px}
+ .hero-main .hero-name{font-size:clamp(73px,17.2vw,85px)}
+ .hero-portrait{width:min(55vw,185px)}
+}
