@@ -85,3 +85,12 @@
 .poetry-end{padding-top:60px;padding-bottom:90px}
 .poetry-end a{display:inline-block;border-bottom:1px solid var(--ink);padding-bottom:10px;font:700 11px/1.4 var(--sans);letter-spacing:.13em;text-transform:uppercase}
 @media(max-width:680px){.poetry-volume-nav{gap:8px}.poetry-volume-nav a{padding:11px 12px;font-size:11px}.poetry-piece-heading{margin-bottom:28px}.poetry-body{font-size:16px;line-height:1.68;white-space:pre;overflow-wrap:normal;word-break:normal}}
+
+/* Wersyfikacja autorska odtworzona ze składu książek. Twarde <br> zabezpieczają wersy także bez CSS. */
+.poetry-body{display:block;white-space:normal;overflow:visible;max-width:100%;padding:0;font:400 clamp(16px,1.42vw,19px)/1.68 var(--serif)}
+.poetry-stanza{display:block;white-space:nowrap;margin:0 0 1.15em;padding:0 0 5px;max-width:100%;overflow-x:auto;overflow-y:hidden;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;scrollbar-width:thin}
+.poetry-stanza:last-child{margin-bottom:0}
+.poetry-stanza em{font-style:italic}
+.poetry-stanza--date{font:400 0.81em/1.6 var(--serif);text-align:right;margin-top:1.6em;color:var(--muted);max-width:min(40em,100%)}
+.poetry-dedication{text-align:right;max-width:42em}
+@media(max-width:680px){.poetry-body{font-size:15px;line-height:1.67}.poetry-stanza{white-space:nowrap;font-size:inherit;line-height:inherit}}
