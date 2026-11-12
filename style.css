@@ -79,8 +79,9 @@
 .poetry-piece-number{display:block;font:700 10px/1.5 var(--sans);letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin-bottom:15px}
 .poetry-piece h3{font:400 clamp(33px,4.2vw,60px)/1.08 var(--serif);letter-spacing:-.045em;margin:0;max-width:850px}
 .poetry-dedication{font:italic 15px/1.5 var(--serif);margin:14px 0 0;color:var(--muted)}
-.poetry-body{white-space:pre-wrap;overflow-wrap:normal;word-break:normal;font:400 clamp(16px,1.42vw,19px)/1.75 var(--serif);letter-spacing:0;max-width:980px}
+/* Nie dopuszczamy do automatycznego łamania wersów: każdy znak nowej linii jest decyzją autora. */
+.poetry-body{display:block;width:100%;max-width:980px;white-space:pre;overflow-x:auto;overflow-y:hidden;overflow-wrap:normal;word-break:normal;font:400 clamp(16px,1.42vw,19px)/1.75 var(--serif);letter-spacing:0;padding:0 0 10px;tab-size:4;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain;scrollbar-width:thin}
 .poetry-body em{font-style:italic}
 .poetry-end{padding-top:60px;padding-bottom:90px}
 .poetry-end a{display:inline-block;border-bottom:1px solid var(--ink);padding-bottom:10px;font:700 11px/1.4 var(--sans);letter-spacing:.13em;text-transform:uppercase}
-@media(max-width:680px){.poetry-volume-nav{gap:8px}.poetry-volume-nav a{padding:11px 12px;font-size:11px}.poetry-piece-heading{margin-bottom:28px}.poetry-body{font-size:16px;line-height:1.68;overflow-wrap:break-word}}
+@media(max-width:680px){.poetry-volume-nav{gap:8px}.poetry-volume-nav a{padding:11px 12px;font-size:11px}.poetry-piece-heading{margin-bottom:28px}.poetry-body{font-size:16px;line-height:1.68;white-space:pre;overflow-wrap:normal;word-break:normal}}
