@@ -134,3 +134,6 @@
  .hero-main .hero-name{font-size:clamp(73px,17.2vw,85px)}
  .hero-portrait{width:min(55vw,185px)}
 }
+
+/* Daty pod wierszami w układzie zgodnym z wydaniem. */
+.poetry-stanza--date-left{text-align:left}
