@@ -5,3 +5,23 @@
 .book-cover-wrap img{display:block;width:100%;height:auto;background:#ded5c8;box-shadow:10px 12px 0 rgba(32,37,31,.08)}
 .book-cover-year{display:block;font-size:12px;color:var(--muted);margin-top:21px}
 @media(max-width:520px){.book-detail--with-cover{grid-template-columns:1fr}.book-cover-wrap{max-width:185px}}
+
+/* Formularz kontaktowy */
+.contact-section{padding-top:clamp(65px,8vw,120px);padding-bottom:clamp(95px,10vw,160px)}
+.contact-layout{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(40px,9vw,145px);align-items:start}
+.contact-intro{font:400 clamp(24px,2.7vw,36px)/1.35 var(--serif);letter-spacing:-.025em;margin:0 0 24px}
+.contact-info{font-size:14px;line-height:1.85;color:var(--muted);max-width:400px}
+.contact-form{border-top:1px solid var(--ink);padding-top:35px;max-width:760px}
+.contact-field{margin-bottom:29px}
+.contact-field label{display:block;font-size:11px;letter-spacing:.15em;text-transform:uppercase;font-weight:700;margin-bottom:12px}
+.contact-field input,.contact-field textarea{display:block;width:100%;padding:15px 16px;border:1px solid #aaaFA5;background:#faf8f2;border-radius:0;color:var(--ink);font:16px/1.5 var(--sans)}
+.contact-field textarea{min-height:210px;resize:vertical}
+.contact-field input:focus,.contact-field textarea:focus{outline:2px solid var(--accent);outline-offset:2px}
+.contact-field input::placeholder,.contact-field textarea::placeholder{color:#777c73}
+.contact-submit{padding:17px 31px;background:var(--dark);border:1px solid var(--dark);color:#f5f3ee;font:700 12px var(--sans);letter-spacing:.13em;text-transform:uppercase;cursor:pointer}
+.contact-submit:hover{background:var(--accent);border-color:var(--accent)}
+.contact-privacy{margin-top:25px;font-size:12px;line-height:1.8;color:var(--muted);max-width:680px}
+.contact-privacy a{text-decoration:underline;text-underline-offset:3px}
+.contact-confirmation{min-height:35vh;padding-top:90px;padding-bottom:140px}
+.contact-confirmation h2{font:400 clamp(35px,5vw,62px)/1.15 var(--serif);letter-spacing:-.04em}
+@media(max-width:800px){.contact-layout{grid-template-columns:1fr;gap:35px}.contact-section{padding-top:60px}.contact-form{max-width:none}}
