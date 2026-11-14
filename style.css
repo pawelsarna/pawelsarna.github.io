@@ -138,3 +138,10 @@
 
 /* Daty pod wierszami w układzie zgodnym z wydaniem. */
 .poetry-stanza--date-left{text-align:left}
+
+/* Zwięzły odsyłacz do wyboru wierszy na stronie głównej. */
+.home-poetry{border-top:1px solid var(--line);padding-top:35px;padding-bottom:60px;display:flex;align-items:flex-end;justify-content:space-between;gap:32px}
+.home-poetry h2{font:400 clamp(45px,5vw,74px)/1 var(--serif);letter-spacing:-.055em;margin:0 0 15px}
+.home-poetry p{font-size:15px;line-height:1.6;color:var(--muted);margin:0}
+.home-poetry .text-link{margin:0 0 5px;flex-shrink:0}
+@media(max-width:600px){.home-poetry{align-items:flex-start;flex-direction:column;gap:24px;padding-top:30px;padding-bottom:55px}}
